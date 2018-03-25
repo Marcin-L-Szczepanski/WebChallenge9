@@ -3,6 +3,7 @@
 Below PSD design converted to responsive website.
 
 More information about the project:
+* [CSS Grid](#css-grid)
 * [ITCSS](#itcss)
 * [Webpack](#webpack)
 
@@ -10,8 +11,18 @@ Download [PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/
 
 ![WebChallenge3 PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/blob/master/design/9.jpg)
 
+## CSS Grid
 
-## ITCSS
+## CSS organization
+
+In order to structure CSS code, I used a combination of two methodologies: BEM and ITCSS.
+Using a methodology of writing CSS code helps to have better understanding of CSS architecture, prepare smaller file sizes, mantain the code easier.
+
+### BEM
+
+### ITCSS
+ITCSS (Inverted Triangle CSS) is a methodology proposed by Harry Roberts.
+
 
 ## Webpack
 - Bundles multiple js / css files into one main js / css file
