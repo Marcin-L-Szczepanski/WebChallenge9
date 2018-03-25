@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <h1>MariaAnna</h1>
+    <a href="#" title="Top page"><h1>MariaAnna</h1></a>
     <nav>
       <ul>
         <li>About me</li>
@@ -38,6 +38,15 @@
       <button>Load More</button>
     </section>
     <section>
+      <p>See the world through my lens</p>
+    </section>
+    <section>
+      <video controls poster="video/poster.png">
+       <source src="video/1.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section>
       <h2>Follow me</h2>
     </section>
     <section>
@@ -45,9 +54,9 @@
       <p></p>
       <form action="#" method="POST">
          <label for="name">Your Name</label>
-        <input type="text" name="name" id="name" placeholder="Your Name">
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
         <label for="email">Your E-mail Address</label>
-        <input type="text" name="email" id="email" placeholder="Your E-mail Address">
+        <input type="email" name="email" id="email" placeholder="Your E-mail Address" required>
         <label for="message">Your Message</label>
         <textarea name="message" id="message" placeholder="Your Message"></textarea>
         <p>All fields marked with an asterisk (*) are required</p>
