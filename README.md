@@ -2,13 +2,14 @@
 
 Below PSD design converted to responsive website.
 
-![WebChallenge3 PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/blob/master/design/9.jpg)
+More information about the project:
+* [ITCSS](#itcss)
+* [Webpack](#webpack)
 
 Download [PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/master/design/9.psd) and challenge yourself! 
 
+![WebChallenge3 PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/blob/master/design/9.jpg)
 
-
-More information about the project:
 
 ## ITCSS
 
