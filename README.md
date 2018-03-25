@@ -4,7 +4,8 @@ Below PSD design converted to responsive website.
 
 More information about the project:
 * [CSS Grid](#css-grid)
-* [ITCSS](#itcss)
+* [CSS Organization](#css-organization)
+  * [ITCSS](#itcss)
 * [Webpack](#webpack)
 
 Download [PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/master/design/9.psd) and challenge yourself! 
@@ -16,6 +17,7 @@ Download [PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/
 ## CSS organization
 
 In order to structure CSS code, I used a combination of two methodologies: BEM and ITCSS.
+
 Using a methodology of writing CSS code helps to have better understanding of CSS architecture, prepare smaller file sizes, mantain the code easier.
 
 ### BEM
