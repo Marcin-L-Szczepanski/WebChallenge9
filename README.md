@@ -2,7 +2,10 @@
 
 Below PSD design converted to responsive website.
 
+<!---Converted page is available at: https://marcin-l-szczepanski.github.io/WebChallenge9/--->
+
 More information about the project:
+* [Progressive Enhancement](#progressive-enhancement)
 * [CSS Grid](#css-grid)
 * [CSS Organization](#css-organization)
   * [ITCSS](#itcss)
@@ -12,6 +15,8 @@ Download [PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/
 
 ![WebChallenge3 PSD design](https://github.com/Marcin-L-Szczepanski/WebChallenge9/blob/master/design/9.jpg)
 
+## Progressive Enhancement
+- [HTML only](https://github.com/Marcin-L-Szczepanski/WebChallenge9/raw/master/design/9.psd) 
 ## CSS Grid
 
 ## CSS organization
