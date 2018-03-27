@@ -74,7 +74,8 @@ In order to compile all the .scss file into one main .css file that is linked in
 - `css-loader` - Loads CSS file with resolved imports and returns CSS code
 - `sass-loader`- Loads a SASS/SCSS file and compiles it to CSS file
 - `node-sass` - Library required by `sass-loader`
+- `postcss-loader` - Adds vendor prefixes to CSS rules using values from Can I Use. 
 - `extract-text-webpack-plugin` - Extracts text from a bundle, or bundles, into a separate file
 
 Install command:
-`npm install  --save-dev css-loader style-loader sass-loader extract-text-webpack-plugin@next`
+`npm install  --save-dev css-loader style-loader sass-loader node-sass postcss-loader extract-text-webpack-plugin@next`

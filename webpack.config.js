@@ -9,7 +9,7 @@ module.exports = {
   
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.bundle.js'
+    filename: 'script.bundle.js'
   },
   
   module: {
@@ -25,6 +25,6 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('main.css')
+    new ExtractTextPlugin('style.bundle.css')
   ]
 }
