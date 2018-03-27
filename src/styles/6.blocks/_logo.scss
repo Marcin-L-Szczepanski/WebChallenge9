@@ -1,8 +1,9 @@
 .logo {
   $block: &;
   @include font($dancing-script);
-  display: flex; 
-  flex-direction: column;
+  display: flex;
+  text-align: center;
+  line-height: .2;
   
   &--white {
     color: $white;

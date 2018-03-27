@@ -15,12 +15,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
           fallback:'style-loader',
-          use: ['css-loader', 'sass-loader', 'postcss-loader']
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'postcss-loader'
+            },
+            {
+              loader: 'sass-loader'
+            }
+          ]
         })
-      }
+      },
     ]
   },
 
