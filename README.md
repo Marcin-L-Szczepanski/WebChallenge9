@@ -77,6 +77,4 @@ In order to compile all the .scss file into one main .css file that is linked in
 - `extract-text-webpack-plugin` - Extracts text from a bundle, or bundles, into a separate file
 
 Install command:
-```Javascript
-npm install  --save-dev css-loader style-loader sass-loader extract-text-webpack-plugin@next
-```
+`npm install  --save-dev css-loader style-loader sass-loader extract-text-webpack-plugin@next`
