@@ -300,7 +300,8 @@ template {
 .button {
   padding: 17px 50px;
   font-family: "Raleway", sans-serif;
-  font-size: 500;
+  font-size: 16px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #d07c7c;
@@ -310,3 +311,24 @@ template {
     background-color: #b75959; }
   .button:active {
     transform: translateY(2px); }
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 22;
+  font-weight: 400;
+  color: #848282;
+  display: flex;
+  flex-direction: column; }
+  .logo--white {
+    color: #ffffff; }
+  .logo--black {
+    color: #000000; }
+  .logo--large > .logo__title {
+    font-size: 33px; }
+  .logo--large > .logo__subtitle {
+    font-size: calc((33 * 0.7) * 1px); }
+  .logo__title {
+    font-size: 22px; }
+  .logo__subtitle {
+    text-transform: lowercase;
+    font-size: calc((22 * 0.7) * 1px); }

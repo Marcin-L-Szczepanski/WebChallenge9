@@ -9,9 +9,11 @@ $light: 300;
 $regular: 400;
 $medium: 500;
 
+$font-size: 22;
 
-@mixin font($family: $raleway, $size: $regular, $color: $grey) {
+@mixin font($family: $raleway, $size: $font-size, $weight: $regular, $color: $grey) {
   font-family: $family;
   font-size: $size;
+  font-weight: $weight;
   color: $color;
 }

@@ -1,0 +1,33 @@
+.logo {
+  $block: &;
+  @include font($dancing-script);
+  display: flex; 
+  flex-direction: column;
+  
+  &--white {
+    color: $white;
+  }
+  
+  &--black {
+    color: $black;
+  }
+  
+  &--large {
+    $font-size: 33;
+    & > #{$block}__title {
+      font-size: $font-size * 1px;
+    }
+    & > #{$block}__subtitle {
+      font-size: calc((#{$font-size} * 0.7) * 1px);
+    }
+  }
+  
+  &__title {
+    font-size: $font-size * 1px;
+  }
+  
+  &__subtitle {
+    text-transform: lowercase;
+    font-size: calc((#{$font-size} * 0.7) * 1px);
+  }
+}
