@@ -32,11 +32,51 @@ ITCSS (Inverted Triangle CSS) is a methodology proposed by Harry Roberts.
 
 
 ## Webpack
-- Bundles multiple js / css files into one main js / css file
-- Compiles ES6 to code that can run in older browser
+Webpack takes various assets and outputs them to a production-ready bundle.
 
-webpack.config.js
+In this project I used Webpack for the following purposes:
+- Bundle multiple JavaScript file into one main JS file, minimizing http requests
+- Compile SCSS files and bundle the styles into one main CSS file
+- Compile ES6 to code that can run in older browser
+- Add CSS prefixes
+
+Basic Webpack configuration file: webpack.config.js
+```Javascript
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+module.exports = {
+  entry: './src/scripts/main.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.bundle.js'
+  },
+  
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract('css-loader')
+      }
+    ]
+  },
+                  
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ]
+}
+```
+
 
 ### CSS
+In order to compile all the .scss file into one main .css file that is linked in <head> section of index.html, the following loaders, plugins and libaries are required:
+- `style-loader` -  Add exports of a module as style to DOM
+- `css-loader` - Loads CSS file with resolved imports and returns CSS code
+- `sass-loader`- Loads a SASS/SCSS file and compiles it to CSS file
+- `node-sass` - Library required by `sass-loader`
+- `extract-text-webpack-plugin` - Extracts text from a bundle, or bundles, into a separate file
 
-`npm install css-loader --save-dev`
+Install command:
+```Javascript
+npm install  --save-dev css-loader style-loader sass-loader extract-text-webpack-plugin@next
+```
