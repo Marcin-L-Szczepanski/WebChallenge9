@@ -334,7 +334,7 @@ template {
       content: '';
       position: absolute;
       bottom: -25px;
-      left: 50%;
+      left: calc(50% - 25px);
       width: 80px;
       border: 2px solid #ffffff; }
   .hero-banner__subtitle {
