@@ -1,7 +1,7 @@
 .logo {
   $block: &;
   @include font($dancing-script);
-  display: flex;
+  display: inline-block;
   text-align: center;
   line-height: .2;
   

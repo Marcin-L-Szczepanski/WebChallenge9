@@ -307,8 +307,7 @@ template {
   text-transform: uppercase;
   background-color: #d07c7c;
   border: none;
-  cursor: pointer;
-  display: flex; }
+  cursor: pointer; }
   .button:hover, .button:focus, .button:active {
     background-color: #b75959; }
   .button:active {
@@ -320,7 +319,7 @@ template {
   font-size: 22;
   font-weight: 400;
   color: #848282;
-  display: flex;
+  display: inline-block;
   text-align: center;
   line-height: .2; }
   .logo--white {
