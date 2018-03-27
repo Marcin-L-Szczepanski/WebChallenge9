@@ -1,0 +1,15 @@
+.button {
+  padding: 17px 50px;
+  @include font($size: $medium, $color: $white);
+  text-transform: uppercase;
+  background-color: $new-york-pink;
+  border: none;
+  cursor: pointer;
+  
+  &:hover, &:focus, &:active {
+    background-color: $new-york-pink-dark;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
