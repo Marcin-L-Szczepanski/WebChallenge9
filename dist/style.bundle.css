@@ -314,6 +314,37 @@ template {
     -webkit-transform: translateY(2px);
             transform: translateY(2px); }
 
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url(img/top.png) no-repeat;
+  background-position: 20%;
+  background-size: cover; }
+  .hero-banner__title {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    position: relative; }
+    .hero-banner__title::after {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      width: 80px;
+      border: 2px solid #ffffff; }
+  .hero-banner__subtitle {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 100%;
+    max-width: 450px; }
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 22;

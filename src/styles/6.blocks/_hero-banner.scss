@@ -1,0 +1,30 @@
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url('../../img/banner/top.png') no-repeat;
+  background-position: 20%;
+  background-size: cover;
+  
+  &__title {
+    @include font($playfair, 48px, $regular, $white);
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      width: 80px;
+      border: 2px solid $white;
+    }
+  }
+  
+  &__subtitle {
+    @include font($size: 16px, $color: $white);
+    width: 100%;
+    max-width: 450px;
+  }
+}
