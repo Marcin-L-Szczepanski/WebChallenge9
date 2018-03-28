@@ -298,6 +298,9 @@ template {
 [hidden] {
   display: none; }
 
+a {
+  text-decoration: none; }
+
 .button {
   padding: 17px 50px;
   font-family: "Raleway", sans-serif;
