@@ -1,6 +1,6 @@
 .logo {
   $block: &;
-  @include font($dancing-script);
+  @include font($family: $dancing-script, $weight: $light);
   display: inline-block;
   text-align: center;
   line-height: .2;
@@ -25,6 +25,7 @@
   
   &__title {
     font-size: $font-size * 1px;
+    font-weight: $light;
   }
   
   &__subtitle {

@@ -356,7 +356,7 @@ a {
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 22;
-  font-weight: 400;
+  font-weight: 300;
   color: #848282;
   display: inline-block;
   text-align: center;
@@ -370,7 +370,8 @@ a {
   .logo--large > .logo__subtitle {
     font-size: calc((33 * 0.7) * 1px); }
   .logo__title {
-    font-size: 22px; }
+    font-size: 22px;
+    font-weight: 300; }
   .logo__subtitle {
     text-transform: lowercase;
     font-size: calc((22 * 0.7) * 1px); }
