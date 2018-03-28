@@ -298,11 +298,19 @@ template {
 [hidden] {
   display: none; }
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
 a {
   text-decoration: none; }
 
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1230px;
   margin: 0 auto; }
 
@@ -375,3 +383,19 @@ a {
   .logo__subtitle {
     text-transform: lowercase;
     font-size: calc((22 * 0.7) * 1px); }
+
+.figure {
+  margin: 0;
+  position: relative; }
+  .figure__picture {
+    width: 100%; }
+  .figure__caption {
+    position: absolute;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.video {
+  width: 100%; }
