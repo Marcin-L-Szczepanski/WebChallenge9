@@ -1,15 +1,50 @@
 .figure {
+  $block: &;
+  position: relative;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color .2s linear;
+  }
+  
+  &:hover {
+    &::after {
+      background-color: rgba(0, 0, 0, .6);
+    }
+    #{$block}__title::before,
+    #{$block}__title::after {
+      top: -70px;
+    }
+    #{$block}__subtitle::before,
+    #{$block}__subtitle::after {
+      bottom: -70px;
+    }
+    #{$block}__title::before,
+    #{$block}__subtitle::before {
+      left: -90px;    
+    }
+    #{$block}__title::after,
+    #{$block}__subtitle::after {
+      right: -90px;   
+    }
+  }
   
   &__picture {
     width: 100%;
   }
   
   &__caption {
+    z-index: 1;
     position: absolute;
     height: 85px;
     padding: 0 10px;
@@ -31,21 +66,22 @@
     text-transform: uppercase;
     height: 44px;
     line-height: 44px;
-    &::before, &::after {
+    &::before, 
+    &::after {
       content: '';
       position: absolute;
       top: 0;
       display: block;
       height: 20px;
       width: 20px;
+      border-top: 2px solid $white;
+      transition: 200ms linear;
     }
     &::before {
-      border-top: 2px solid $white;
       border-left: 2px solid $white;
       left: -30px;
     }
     &::after {
-      border-top: 2px solid $white;
       border-right: 2px solid $white;
       right: -30px;
     }
@@ -61,15 +97,15 @@
       bottom: 0;
       display: block;
       height: 20px;
+      border-bottom: 2px solid $white;
       width: 20px;
+      transition: 200ms linear;
     }
     &::before {
-      border-bottom: 2px solid $white;
       border-left: 2px solid $white;
       left: -30px;
     }
     &::after {
-      border-bottom: 2px solid $white;
       border-right: 2px solid $white;
       right: -30px;
     }
