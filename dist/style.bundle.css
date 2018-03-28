@@ -301,6 +301,11 @@ template {
 a {
   text-decoration: none; }
 
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto; }
+
 .button {
   padding: 17px 50px;
   font-family: "Raleway", sans-serif;
