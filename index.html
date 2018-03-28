@@ -16,7 +16,6 @@
 </head>
 
 <body>
- <div class="container">
   <header>
    <div class="hero-banner">
       <div class="logo logo--large logo--white">
@@ -36,6 +35,7 @@
       </ul>
     </nav>
   </header>
+  <div class="container">
   <main>
     <section>
       <span id="about-me"></span>
@@ -45,11 +45,12 @@
     <section>
       <span id="works"></span>
       <h2>Works</h2>
-      <figure>
-        <img src="img/gallery/1.png" alt="">
-        <figcaption>
-          <h3>Nature</h3>
-          <p>beautiful nature</p>
+      <div class="gallery">
+      <figure class="figure">
+        <img class="figure__picture" src="img/gallery/1.png" alt="">
+        <figcaption class="figure__caption">
+          <h3 class="figure__title">Nature</h3>
+          <p class="figure__subtitle">beautiful nature</p>
         </figcaption>
       </figure>
       <figure>
@@ -87,6 +88,7 @@
           <p>beautiful animals</p>
         </figcaption>
       </figure>
+      </div>
       <button class="button">Load More</button>
     </section>
     <section>
@@ -105,7 +107,7 @@
       </blockquote>
     </section>
     <section>
-      <video controls poster="video/poster.png">
+      <video class="video" controls poster="video/poster.png">
        <source src="video/1.mp4" type="video/mp4"> 
         Your browser does not support the video tag.
       </video>
