@@ -361,6 +361,32 @@ a {
     width: 100%;
     max-width: 450px; }
 
+.section {
+  text-align: center;
+  width: 100%;
+  max-width: 770px; }
+  .section__title {
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #5a5957;
+    text-transform: uppercase; }
+    .section__title::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 30px);
+      height: 2px;
+      width: 60px;
+      background: #d07c7c; }
+  .section__paragraph {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #848282;
+    margin: 35px 0; }
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-size: 22;

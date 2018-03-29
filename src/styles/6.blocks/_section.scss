@@ -1,0 +1,25 @@
+.section {
+  text-align: center;
+  width: 100%;
+  max-width: 770px;
+  
+  &__title {
+    position: relative;
+    @include font($playfair, 25px, $regular, $chicago);
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 30px);
+      height: 2px;
+      width: 60px;
+      background: $new-york-pink;
+    }
+  }
+  
+  &__paragraph {
+    @include font($size: 14px, $weight: $light);
+    margin: 35px 0;
+  }
+}
