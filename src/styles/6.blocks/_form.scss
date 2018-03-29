@@ -1,0 +1,22 @@
+.form {
+  $block: &;
+  
+  &__input {
+    width: 100%;
+    max-width: 580px;
+    height: 50px;
+    margin: 15px 0;
+    padding-left: 25px;
+    @include font($size: 13px, $weight: $medium, $color: $black);
+    border: 1px solid $new-york-pink;
+    &::placeholder {
+      @include font($size: 13px);
+    }
+  }
+  
+  &__textarea {
+    @extend #{$block}__input;
+  height: 140px;
+  padding-top: 20px;
+  }
+}
