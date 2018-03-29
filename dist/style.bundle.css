@@ -385,7 +385,8 @@ a {
     font-size: 14px;
     font-weight: 300;
     color: #848282;
-    margin: 35px 0; }
+    margin: 35px 0;
+    line-height: 27px; }
 
 .logo {
   font-family: "Dancing Script", cursive;
