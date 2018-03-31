@@ -314,29 +314,6 @@ a {
   max-width: 1230px;
   margin: 0 auto; }
 
-.section-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto; }
-
-.button {
-  padding: 17px 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #d07c7c;
-  border: none;
-  cursor: pointer; }
-  .button:hover, .button:focus, .button:active {
-    background-color: #b75959; }
-  .button:active {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); }
-
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -367,6 +344,45 @@ a {
     color: #ffffff;
     width: 100%;
     max-width: 450px; }
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 120px; }
+  .section-wrapper--bg-contact {
+    position: relative; }
+    .section-wrapper--bg-contact::after {
+      content: '';
+      position: absolute;
+      background: url(img/contact-form.png) no-repeat;
+      background-size: cover;
+      background-position: 20%;
+      opacity: 0.15;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+
+.button {
+  padding: 17px 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #d07c7c;
+  border: none;
+  cursor: pointer; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #b75959; }
+  .button:active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
 
 .section {
   text-align: center;
