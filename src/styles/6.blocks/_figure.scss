@@ -2,6 +2,7 @@
   $block: &;
   position: relative;
   margin: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,19 +24,19 @@
     }
     #{$block}__title::before,
     #{$block}__title::after {
-      top: -70px;
+      top: -70%;
     }
     #{$block}__subtitle::before,
     #{$block}__subtitle::after {
-      bottom: -70px;
+      bottom: -70%;
     }
     #{$block}__title::before,
     #{$block}__subtitle::before {
-      left: -90px;    
+      left: -40%;    
     }
     #{$block}__title::after,
     #{$block}__subtitle::after {
-      right: -90px;   
+      right: -40%;   
     }
   }
   
