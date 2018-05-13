@@ -462,6 +462,7 @@ grid-column: 1/3;
 */
 .figure {
   position: relative;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   display: flex;
