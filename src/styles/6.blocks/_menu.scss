@@ -1,0 +1,13 @@
+.menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  
+  &__logo {
+    margin: 20px;
+  }
+  &__items {
+    position: relative;
+    display: flex;
+  }
+}
