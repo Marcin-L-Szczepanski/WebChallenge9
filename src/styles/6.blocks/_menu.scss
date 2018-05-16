@@ -1,13 +1,27 @@
 .menu {
   position: fixed;
   top: 0;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  z-index: 2;
+  
+  &__bg {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+  }
   
   &__logo {
+    position: absolute;
     margin: 20px;
+    z-index: 2;
   }
   &__items {
-    position: relative;
     display: flex;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    flex-direction: column;
   }
 }

@@ -435,6 +435,28 @@ a {
     text-transform: lowercase;
     font-size: calc((22 * 0.7) * 1px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 2; }
+  .menu__bg {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff; }
+  .menu__logo {
+    position: absolute;
+    margin: 20px;
+    z-index: 2; }
+  .menu__items {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    flex-direction: column; }
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
