@@ -9,6 +9,11 @@
   background-position: 20%;
   background-size: cover;
   
+  &--menu-open {
+    transform: translate(-50px);
+    transition: transform 100ms linear;
+  }
+  
   &__title {
     @include font($playfair, 48px, $regular, $white);
     position: relative;

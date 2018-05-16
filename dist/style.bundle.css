@@ -324,6 +324,12 @@ a {
   background: url(img/top.png) no-repeat;
   background-position: 20%;
   background-size: cover; }
+  .hero-banner--menu-open {
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+    transition: -webkit-transform 100ms linear;
+    transition: transform 100ms linear;
+    transition: transform 100ms linear, -webkit-transform 100ms linear; }
   .hero-banner__title {
     font-family: "Playfair Display", serif;
     font-size: 48px;
@@ -444,18 +450,38 @@ a {
   z-index: 2; }
   .menu__bg {
     position: relative;
-    width: 100%;
-    background-color: #ffffff; }
+    width: 100%; }
   .menu__logo {
     position: absolute;
     margin: 20px;
     z-index: 2; }
   .menu__items {
     display: flex;
+    align-items: center;
     position: absolute;
-    top: 30px;
-    right: 50px;
-    flex-direction: column; }
+    right: 0;
+    width: 60%;
+    height: 100%;
+    padding-top: 50px;
+    -webkit-transform: translate(100%);
+            transform: translate(100%);
+    flex-direction: column;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #848282;
+    transition: all 100ms linear; }
+    .menu__items--open {
+      -webkit-transform: translate(0%);
+              transform: translate(0%); }
+  .menu__link {
+    display: inline-block;
+    width: 100%;
+    padding: 20px; }
+    .menu__link:hover {
+      background-color: #d3d3d3; }
 
 .gallery {
   display: grid;
