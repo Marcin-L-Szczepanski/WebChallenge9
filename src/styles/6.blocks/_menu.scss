@@ -18,6 +18,24 @@
     background-color: rgba(255,255,255,0.2);
     z-index: 2;
   }
+  
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 30px;
+    width: 110px;
+    margin: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    @include font($family: $dancing-script, $size: 20px, $weight: $light, $color: $white);
+    z-index: 3;
+    &::after {
+      content: " ➥";
+    }
+  }
+  
   &__items {
     position: absolute;
     height: 100vh;
