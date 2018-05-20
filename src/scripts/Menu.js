@@ -28,13 +28,14 @@ function menuHidable() {
 
 function createMenuBtn() {
   const menuBtn = document.createElement('button');
+  menuBtn.setAttribute('id', 'menu-btn');
   menuBtn.classList.add('menu__button');
   menuBtn.innerHTML = 'Open Menu';
-  menuBtn.addEventListener('click', openCloseMenu);
+  menuBtn.addEventListener('click', toggleMenu);
   menu.insertBefore(menuBtn, menu.childNodes[0]);
 }
 
-function openCloseMenu() {
+function toggleMenu() {
   const menuItems = document.getElementById('menu-items');
   if (menuItems.classList.contains('menu__items--closed')) {
     menuItems.classList.remove('menu__items--closed');
@@ -42,9 +43,15 @@ function openCloseMenu() {
     this.classList.add('menu__button--menuOpen');
     this.innerHTML = 'Close Menu';
   } else {
+    closeMenu();
+  };
+}
+
+function closeMenu() {
+    const menuItems = document.getElementById('menu-items');
+    const menuBtn = document.getElementById('menu-btn');
     menuItems.classList.remove('menu__items--open');
     menuItems.classList.add('menu__items--closed'); 
-    this.classList.remove('menu__button--menuOpen');
-    this.innerHTML = 'Open Menu';
-  };
+    menuBtn.classList.remove('menu__button--menuOpen');
+    menuBtn.innerHTML = 'Open Menu';
 }
