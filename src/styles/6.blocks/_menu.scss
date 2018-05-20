@@ -25,20 +25,33 @@
     right: 20px;
     height: 30px;
     width: 110px;
+    padding-left: 20px;
     margin: 15px;
-    border: none;
+    border: 1px solid $white;
     background: none;
     cursor: pointer;
     @include font($family: $dancing-script, $size: 20px, $weight: $light, $color: $white);
     z-index: 3;
-    &::after {
-      content: " ➥";
+    &::before {
+      content: "⇱";
+      position: inherit;
+      left: 5px;
+      display: inline-block;
+      transform: rotate(-90deg);
+      transition: 150ms linear;
+    }
+    &--menuOpen {
+      border-color: $chicago;
+      color: $chicago;
+      &::before {
+        content: "⇱";
+        transform: rotate(-270deg);
+      }
     }
   }
   
   &__items {
     position: absolute;
-    height: 100vh;
     width: 100%;
     top: 50px;  
     display: flex;
@@ -53,7 +66,7 @@
       top: 0;  
       right: 0;
       width: 60%;
-      height: 100%;
+      height: 100vh;
       flex-direction: column;
       font-size: 13px;
       transform: translate(100%);

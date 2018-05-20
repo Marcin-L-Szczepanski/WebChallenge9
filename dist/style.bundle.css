@@ -463,8 +463,9 @@ a {
     right: 20px;
     height: 30px;
     width: 110px;
+    padding-left: 20px;
     margin: 15px;
-    border: none;
+    border: 1px solid #ffffff;
     background: none;
     cursor: pointer;
     font-family: "Dancing Script", cursive;
@@ -472,11 +473,23 @@ a {
     font-weight: 300;
     color: #ffffff;
     z-index: 3; }
-    .menu__button::after {
-      content: " \27A5"; }
+    .menu__button::before {
+      content: "\21F1";
+      position: inherit;
+      left: 5px;
+      display: inline-block;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      transition: 150ms linear; }
+    .menu__button--menuOpen {
+      border-color: #5a5957;
+      color: #5a5957; }
+      .menu__button--menuOpen::before {
+        content: "\21F1";
+        -webkit-transform: rotate(-270deg);
+                transform: rotate(-270deg); }
   .menu__items {
     position: absolute;
-    height: 100vh;
     width: 100%;
     top: 50px;
     display: flex;
@@ -495,7 +508,7 @@ a {
       top: 0;
       right: 0;
       width: 60%;
-      height: 100%;
+      height: 100vh;
       flex-direction: column;
       font-size: 13px;
       -webkit-transform: translate(100%);
