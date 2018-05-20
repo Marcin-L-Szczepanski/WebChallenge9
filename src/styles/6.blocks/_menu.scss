@@ -2,9 +2,19 @@
   $block: &;
   position: fixed;
   top: 0;
+  height: 60px;
   width: 100vw;
   display: flex;
+  background-color: rgba(255,255,255,0.2);
   z-index: 2;
+  transition: background-color 300ms linear;
+  &--white {
+    background-color: rgba(255,255,255,0.8);
+    & #{$block}__button {
+      color: $chicago;
+      border-color: $chicago;
+    }
+  }
   
   &__bg {
     position: relative;
@@ -15,7 +25,6 @@
     position: absolute;
     padding: 20px;
     width: 100%;
-    background-color: rgba(255,255,255,0.2);
     z-index: 2;
   }
   

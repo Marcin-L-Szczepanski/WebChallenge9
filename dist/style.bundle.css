@@ -325,12 +325,6 @@ a {
   background: url(img/top.png) no-repeat;
   background-position: 20%;
   background-size: cover; }
-  .hero-banner--menu-open {
-    -webkit-transform: translate(-50px);
-            transform: translate(-50px);
-    transition: -webkit-transform 100ms linear;
-    transition: transform 100ms linear;
-    transition: transform 100ms linear, -webkit-transform 100ms linear; }
   .hero-banner__title {
     font-family: "Playfair Display", serif;
     font-size: 48px;
@@ -445,9 +439,17 @@ a {
 .menu {
   position: fixed;
   top: 0;
+  height: 60px;
   width: 100vw;
   display: flex;
-  z-index: 2; }
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  transition: background-color 300ms linear; }
+  .menu--white {
+    background-color: rgba(255, 255, 255, 0.8); }
+    .menu--white .menu__button {
+      color: #5a5957;
+      border-color: #5a5957; }
   .menu__bg {
     position: relative;
     width: 100%; }
@@ -455,7 +457,6 @@ a {
     position: absolute;
     padding: 20px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
     z-index: 2; }
   .menu__button {
     position: absolute;
