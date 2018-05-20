@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', initMenu);
 document.addEventListener('scroll', changeMenuOpacity);
 
+const link = document.getElementsByClassName('menu__link');
+for (let i=0; i<link.length; i++) {
+  link[i].addEventListener('click', closeMenu);
+}
 
 
 function changeMenuOpacity() {
@@ -14,8 +18,7 @@ function changeMenuOpacity() {
       menuLogo.classList.add('logo--white');
     }
 }
-
-                          
+                        
 function initMenu() {
   menuHidable();
   createMenuBtn();
