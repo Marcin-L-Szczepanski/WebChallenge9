@@ -1,10 +1,27 @@
-export default function initMenu() {
-  menuHidable();
-  createMenuBtn();
+document.addEventListener('DOMContentLoaded', initMenu);
+document.addEventListener('scroll', changeMenuOpacity);
+
+
+
+function changeMenuOpacity() {
+  const menu = document.getElementById('menu');
+  const menuLogo = document.getElementById('menu-logo');
+    if (pageYOffset > 100) { 
+      menu.classList.add('menu--white');
+      menuLogo.classList.remove('logo--white');
+    } else {
+      menu.classList.remove('menu--white');
+      menuLogo.classList.add('logo--white');
+    }
 }
 
+                          
+function initMenu() {
+  menuHidable();
+  createMenuBtn();
+};
+
 function menuHidable() {
-  const menu = document.getElementById('menu');
   const menuItems = document.getElementById('menu-items');
   menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
 }
