@@ -24,7 +24,7 @@
     top: 0;
     right: 20px;
     height: 30px;
-    width: 110px;
+    width: 120px;
     padding-left: 20px;
     margin: 15px;
     border: 1px solid $white;
@@ -32,6 +32,12 @@
     cursor: pointer;
     @include font($family: $dancing-script, $size: 20px, $weight: $light, $color: $white);
     z-index: 3;
+    &:hover {
+      background-color: rgba(255,255,255,0.2);
+      &::before {
+        transform: translate(-2px, 2px) rotate(-90deg);
+      }
+    }
     &::before {
       content: "⇱";
       position: inherit;
@@ -43,6 +49,12 @@
     &--menuOpen {
       border-color: $chicago;
       color: $chicago;
+      &:hover {
+        background-color: rgba(0,0,0,0.1);
+        &::before {
+          transform: translate(2px, -2px) rotate(-270deg);
+        }
+      }
       &::before {
         content: "⇱";
         transform: rotate(-270deg);
