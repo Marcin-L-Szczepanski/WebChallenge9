@@ -1,11 +1,19 @@
-//require('../styles/main.scss');
+require('./Menu.js');
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+
+/*
+import initMenu from './Menu';
+
+document.addEventListener('DOMContentLoaded', function() {
   initMenu();
 });
 
-import initMenu from './Menu';
+import changeMenuOpacity from './Menu';
+document.addEventListener('scroll', changeMenuOpacity);
+*/
+
+
+
 
 //import { people } from './test';
 
