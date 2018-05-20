@@ -1,6 +1,11 @@
 //require('../styles/main.scss');
 
-console.log("Hello world from webpack");
+document.addEventListener("DOMContentLoaded", function() {
+  
+  initMenu();
+});
+
+import initMenu from './Menu';
 
 //import { people } from './test';
 
