@@ -1,0 +1,13 @@
+.opinions {
+  &__title {
+    @include font($playfair, 25px);
+  }
+  &__slider {
+    width: 100%;
+    text-align: center;
+    @include font($size: 18px);
+  }
+  &__author {
+    font-size: 14px;
+  }
+}
