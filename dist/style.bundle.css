@@ -687,7 +687,11 @@ grid-column: 1/3;
   font-weight: 400;
   color: #848282; }
 
+.opinions__content {
+  line-height: 25px; }
+
 .opinions__author {
+  margin-top: 25px;
   font-size: 14px;
   color: #a0a0a0; }
 
