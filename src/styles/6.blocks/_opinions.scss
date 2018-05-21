@@ -1,6 +1,18 @@
 .opinions {
   &__title {
+    position: relative;
+    margin-bottom: 70px;
     @include font($playfair, 25px);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: calc(50% - 15px);
+      width: 30px;
+      height: 3px;
+      background-color: $new-york-pink;
+      
+    }
   }
   &__slider {
     width: 100%;
@@ -9,5 +21,6 @@
   }
   &__author {
     font-size: 14px;
+    color: $chalice;
   }
 }
