@@ -177,3 +177,6 @@ Used to create relationship between the button and the controlled Menu list.
 </ul>
 ```
 
+
+## Notes to myself:
+Read about SVG as an icon system
