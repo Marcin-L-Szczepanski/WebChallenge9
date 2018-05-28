@@ -354,7 +354,8 @@ a {
   width: 90%;
   margin: 70px auto 120px auto; }
   .section-wrapper--bg-contact {
-    position: relative; }
+    position: relative;
+    padding: 70px 0 120px 0; }
     .section-wrapper--bg-contact::after {
       content: '';
       position: absolute;
@@ -363,9 +364,9 @@ a {
       background-position: 20%;
       opacity: 0.15;
       height: 100%;
-      width: 100%;
+      width: 100vw;
       top: 0;
-      left: 0;
+      left: -12%;
       z-index: -1; }
 
 .button {
