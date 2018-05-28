@@ -19,4 +19,18 @@
   height: 140px;
   padding-top: 20px;
   }
+
+&__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  &__instructions {
+    margin-bottom: 15px;
+    width: 100%;
+    @include font($size: 14px);
+    text-align: center;
+  }
 }
