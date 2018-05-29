@@ -353,6 +353,10 @@ a {
   align-items: center;
   width: 90%;
   margin: 70px auto 70px auto; }
+  .section-wrapper__anchor {
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden; }
   .section-wrapper--bg-contact {
     position: relative;
     padding: 70px 0 120px 0; }
