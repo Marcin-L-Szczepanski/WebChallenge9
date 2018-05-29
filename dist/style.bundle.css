@@ -540,11 +540,15 @@ a {
     .menu__link:hover {
       background-color: #d3d3d3; }
 
-.gallery {
+.gallery__grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 260px;
   grid-gap: 25px; }
+
+.gallery__button {
+  display: block;
+  margin: 25px auto 0 auto; }
 
 /*
 .gallery {
@@ -563,7 +567,16 @@ grid-row: 1/3;
 &__fig5 {
 grid-column: 1/3;
 }
+
+
+&__button {
+margin-top: 80px;
 }
+}
+
+
+
+
 */
 .figure {
   position: relative;
