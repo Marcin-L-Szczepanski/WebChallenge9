@@ -442,7 +442,8 @@ margin: 70px auto 120px auto;
     font-size: calc((33 * 0.7) * 1px); }
   .logo__title {
     font-size: 22px;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0.67em 0; }
   .logo__subtitle {
     text-transform: lowercase;
     font-size: calc((22 * 0.7) * 1px); }
@@ -810,6 +811,15 @@ margin-top: 80px;
         opacity: 1; }
   .socials__logo {
     width: 20px; }
+
+.footer__logo {
+  margin-bottom: 25px; }
+
+.footer__copyright {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #848282; }
 
 .visually-hidden {
   border: 0;

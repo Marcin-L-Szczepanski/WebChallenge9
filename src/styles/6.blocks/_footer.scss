@@ -1,0 +1,11 @@
+.footer {
+  &__arrow-up {
+    
+  }
+  &__logo {
+    margin-bottom: 25px;
+  }
+  &__copyright {
+    @include font($size: 12px, $weight: $light);
+  }
+}
