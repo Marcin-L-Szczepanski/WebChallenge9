@@ -812,14 +812,15 @@ margin-top: 80px;
   .socials__logo {
     width: 20px; }
 
-.footer__logo {
-  margin-bottom: 25px; }
-
-.footer__copyright {
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  color: #848282; }
+.footer {
+  margin: 25px auto; }
+  .footer__logo {
+    margin-bottom: 25px; }
+  .footer__copyright {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #848282; }
 
 .visually-hidden {
   border: 0;
@@ -830,3 +831,10 @@ margin-top: 80px;
   padding: 0;
   position: absolute;
   width: 1px; }
+
+@media only screen and (orientation: landscape) and (max-width: 740px) {
+  .hero-banner__title {
+    margin: 30px 0;
+    font-size: 40px; }
+  .hero-banner__subtitle {
+    display: none; } }

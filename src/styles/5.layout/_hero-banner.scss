@@ -29,3 +29,17 @@
     max-width: 450px;
   }
 }
+
+// Media queries 
+  // Landscape orientation
+  @mixin hero-banner\@screen-landscape {
+    .hero-banner {
+      &__title {
+        margin: 30px 0;
+        font-size: 40px;
+      }
+      &__subtitle {      
+        display: none;
+      }
+    }
+  }
