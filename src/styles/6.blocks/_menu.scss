@@ -119,3 +119,19 @@
     }
   }
 }
+
+
+// Media queries 
+  // Landscape orientation
+@mixin menu\@screen-landscape {
+  .menu {
+    $block: &;
+    &__items {
+      &--hidable {
+        & #{$block}__link {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
