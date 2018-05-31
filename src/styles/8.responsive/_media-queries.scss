@@ -1,0 +1,10 @@
+// Media Queries //
+// Inspired by https://medium.com/front-end-developers/the-solution-to-media-queries-in-sass-5493ebe16844
+// and: https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
+
+
+// Landscape orientation
+@media only screen and (orientation: landscape) and (max-width: 740px) {
+  @include hero-banner\@screen-landscape;
+}
+
