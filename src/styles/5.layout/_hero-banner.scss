@@ -25,6 +25,7 @@
   
   &__subtitle {
     @include font($size: 16px, $color: $white);
+    line-height: 23px;
     width: 100%;
     max-width: 450px;
   }
