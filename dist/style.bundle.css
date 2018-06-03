@@ -841,3 +841,15 @@ margin-top: 80px;
     display: none; }
   .menu__items--hidable .menu__link {
     padding: 7%; } }
+
+@media only screen and (min-width: 1020px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .gallery__fig1 {
+    grid-column: 1/3; }
+  .gallery__fig2 {
+    grid-column: 2;
+    grid-row: 2/5; }
+  .gallery__fig5 {
+    grid-column: 1/3;
+    grid-row: 5; } }

@@ -9,3 +9,8 @@
   @include menu\@screen-landscape;
 }
 
+// Tablet view
+@media only screen and (min-width: 1020px) {
+  @include gallery\@screen-wide;
+
+}
