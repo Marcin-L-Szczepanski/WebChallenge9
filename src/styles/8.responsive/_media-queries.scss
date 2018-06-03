@@ -9,8 +9,13 @@
   @include menu\@screen-landscape;
 }
 
-// Tablet view
+// Tablet vertical view
 @media only screen and (min-width: 760px) {
   @include gallery\@screen-medium;
+}
 
+
+// Tablet horizontal view
+@media only screen and (min-width: 1020px) {
+  @include gallery\@screen-wide;
 }
