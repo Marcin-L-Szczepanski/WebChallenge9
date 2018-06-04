@@ -40,8 +40,8 @@ function toggleMenuItems() {
     menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
   } else {
     menuItems.classList.remove('menu__items--hidable');
-    if menuItems.classList.contains('menu__items--closed') {
-      menuItems.classList.remove('menu__items--closed')
+    if (menuItems.classList.contains('menu__items--closed')) {
+      menuItems.classList.remove('menu__items--closed');
     }
   }
 }
