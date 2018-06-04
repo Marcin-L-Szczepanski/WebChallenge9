@@ -369,7 +369,7 @@ a {
       background-position: 20%;
       opacity: 0.15;
       height: 100%;
-      width: calc(100vw - 16px);
+      width: calc(100vw - 1px);
       top: 0;
       left: -12%;
       z-index: -1; }
