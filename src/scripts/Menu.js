@@ -1,4 +1,7 @@
+"use strict";
+
 document.addEventListener('DOMContentLoaded', initMenu);
+window.addEventListener('resize', toggleMenuItems);
 document.addEventListener('scroll', changeMenuOpacity);
 
 const link = document.getElementsByClassName('menu__link');
@@ -20,13 +23,18 @@ function changeMenuOpacity() {
 }
                         
 function initMenu() {
-  menuHidable();
   createMenuBtn();
+  toggleMenuItems();
 };
 
-function menuHidable() {
+function toggleMenuItems() {
   const menuItems = document.getElementById('menu-items');
-  menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
+  console.log('toggle');
+  if (window.innerWidth < 760) {
+    menuItems.classList.add('menu__items--hidable');
+  } else {
+    menuItems.classList.remove('menu__items--hidable');
+  }
 }
 
 function createMenuBtn() {
