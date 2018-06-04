@@ -136,3 +136,22 @@
     }
   }
 }
+  // Medium view (min 760px)
+@mixin menu\@screen-medium {
+  .menu {
+    position: static;
+    padding: 15px 50px;
+    &__button {
+      display: none;
+    }
+    &__logo {
+      position: static;
+      padding: 0;
+      line-height: 30px;
+    }
+    &__items {
+      position: static;
+      justify-content: space-around;
+    }
+  }
+}

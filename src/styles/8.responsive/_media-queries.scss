@@ -11,6 +11,8 @@
 
 // Tablet vertical view
 @media only screen and (min-width: 760px) {
+  @include section-wrapper\@screen-medium;
+  @include menu\@screen-medium;
   @include gallery\@screen-medium;
 }
 
