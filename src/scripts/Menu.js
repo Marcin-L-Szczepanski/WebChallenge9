@@ -24,16 +24,25 @@ function changeMenuOpacity() {
                         
 function initMenu() {
   createMenuBtn();
-  toggleMenuItems();
+  setMenuLayout();
 };
+
+function setMenuLayout() {
+  const menuItems = document.getElementById('menu-items');
+  if (window.innerWidth < 760) {
+    menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
+  }
+}
 
 function toggleMenuItems() {
   const menuItems = document.getElementById('menu-items');
-  console.log('toggle');
   if (window.innerWidth < 760) {
-    menuItems.classList.add('menu__items--hidable');
+    menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
   } else {
     menuItems.classList.remove('menu__items--hidable');
+    if menuItems.classList.contains('menu__items--closed') {
+      menuItems.classList.remove('menu__items--closed')
+    }
   }
 }
 
