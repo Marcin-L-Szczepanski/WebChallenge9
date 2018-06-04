@@ -37,7 +37,7 @@ function setMenuLayout() {
 function toggleMenuItems() {
   const menuItems = document.getElementById('menu-items');
   if (window.innerWidth < 760) {
-    menuItems.classList.add('menu__items--hidable', 'menu__items--closed');
+    menuItems.classList.add('menu__items--hidable');
   } else {
     menuItems.classList.remove('menu__items--hidable');
     if (menuItems.classList.contains('menu__items--closed')) {
@@ -57,13 +57,13 @@ function createMenuBtn() {
 
 function toggleMenu() {
   const menuItems = document.getElementById('menu-items');
-  if (menuItems.classList.contains('menu__items--closed')) {
+  if (menuItems.classList.contains('menu__items--open')) {
+    closeMenu();
+  } else {
     menuItems.classList.remove('menu__items--closed');
     menuItems.classList.add('menu__items--open'); 
     this.classList.add('menu__button--menuOpen');
     this.innerHTML = 'Close Menu';
-  } else {
-    closeMenu();
   };
 }
 
