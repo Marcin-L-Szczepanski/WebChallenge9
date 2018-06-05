@@ -96,27 +96,28 @@
       }
     }
     &--closed {
-      
       transform: translate(100%);
     }
     
     &--open {
-      box-shadow: -4px 0px 47px -10px rgba(0,0,0,0.75);
       transform: translate(0%);
+    }
+    &--hidable.menu__items--open {
+        box-shadow: -4px 0px 47px -10px rgba(0,0,0,0.75);
     }
   }
   
   &__item {
 
-
   }
+    
   &__link {
     display: inline-block;
     width: 100%;
-    padding: 10px;
+    padding: 5px 0;
     color: $dove-grey;
     &:hover {
-      background-color: $alto;
+      border-bottom: 2px solid $new-york-pink;
     }
   }
 }

@@ -543,16 +543,17 @@ margin: 70px auto 120px auto;
       -webkit-transform: translate(100%);
               transform: translate(100%); }
     .menu__items--open {
-      box-shadow: -4px 0px 47px -10px rgba(0, 0, 0, 0.75);
       -webkit-transform: translate(0%);
               transform: translate(0%); }
+    .menu__items--hidable.menu__items--open {
+      box-shadow: -4px 0px 47px -10px rgba(0, 0, 0, 0.75); }
   .menu__link {
     display: inline-block;
     width: 100%;
-    padding: 10px;
+    padding: 5px 0;
     color: #696969; }
     .menu__link:hover {
-      background-color: #d3d3d3; }
+      border-bottom: 2px solid #d07c7c; }
 
 .gallery__grid {
   display: grid;
