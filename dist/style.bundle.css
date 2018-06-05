@@ -453,7 +453,7 @@ margin: 70px auto 120px auto;
   position: fixed;
   top: 0;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 2;
