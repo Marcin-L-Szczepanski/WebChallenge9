@@ -93,6 +93,9 @@
       transform: translate(100%);
       & #{$block}__link {
         padding: 30px;
+        &:hover, &:focus {
+          background-color: $rose-fog-bright;
+        }
       }
     }
     &--closed {
@@ -113,10 +116,11 @@
     
   &__link {
     display: inline-block;
+    position: relative;
     width: 100%;
     padding: 5px 0;
     color: $dove-grey;
-    &:hover {
+    &:hover, &:focus {
       border-bottom: 2px solid $new-york-pink;
     }
   }

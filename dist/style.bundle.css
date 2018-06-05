@@ -539,6 +539,8 @@ margin: 70px auto 120px auto;
               transform: translate(100%); }
       .menu__items--hidable .menu__link {
         padding: 30px; }
+        .menu__items--hidable .menu__link:hover, .menu__items--hidable .menu__link:focus {
+          background-color: #f9e8e8; }
     .menu__items--closed {
       -webkit-transform: translate(100%);
               transform: translate(100%); }
@@ -549,10 +551,11 @@ margin: 70px auto 120px auto;
       box-shadow: -4px 0px 47px -10px rgba(0, 0, 0, 0.75); }
   .menu__link {
     display: inline-block;
+    position: relative;
     width: 100%;
     padding: 5px 0;
     color: #696969; }
-    .menu__link:hover {
+    .menu__link:hover, .menu__link:focus {
       border-bottom: 2px solid #d07c7c; }
 
 .gallery__grid {
