@@ -15,11 +15,6 @@
       border-color: $chicago;
     }
   }
-  &--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
   
   &__bg {
     position: relative;
@@ -153,6 +148,8 @@
     padding: 15px 50px;
     &--fixed {
       position: fixed;
+      top: 0;
+      left: 0;
     }
     &__button {
       display: none;
