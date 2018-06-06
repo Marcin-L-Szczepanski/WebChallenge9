@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: url('../../img/banner/top.png') no-repeat;
-  background-position: 20%;
-  background-size: cover;
+  &::after {
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background: url('../../img/banner/top.png') no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    z-index: -1;
+  }
   
   &__title {
     margin: 60px 0;
@@ -44,3 +53,22 @@
       }
     }
   }
+
+// Media queries 
+// Medium view (min 760px)
+@mixin hero-banner\@screen-medium {
+  .hero-banner {
+    &::after {
+      width: calc(100vw - 17px);
+      left: unset;
+    }
+  }
+}
+// Desktop view (min 1370px)
+@mixin hero-banner\@screen-desktop {
+  .hero-banner {
+    &::after {
+      background-attachment: fixed;
+    }
+  }
+}

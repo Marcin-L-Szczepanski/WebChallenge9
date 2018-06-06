@@ -11,6 +11,7 @@
 
 // Tablet vertical view
 @media only screen and (min-width: 760px) {
+  @include hero-banner\@screen-medium;
   @include section-wrapper\@screen-medium;
   @include menu\@screen-medium;
   @include gallery\@screen-medium;
@@ -24,5 +25,6 @@
 
 // Desktop screen (@screen-desktop)
 @media only screen and (min-width: 1370px) {
+  @include hero-banner\@screen_desktop;
   @include section-wrapper\@screen_desktop;
 }
