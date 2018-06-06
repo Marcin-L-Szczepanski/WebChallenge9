@@ -21,3 +21,8 @@
 @media only screen and (min-width: 1020px) {
   @include gallery\@screen-wide;
 }
+
+// Desktop screen (@screen-desktop)
+@media only screen and (min-width: 1370px) {
+  @include section-wrapper\@screen_desktop;
+}
