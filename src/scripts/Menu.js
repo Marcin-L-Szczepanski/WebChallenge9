@@ -2,7 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', initMenu);
 window.addEventListener('resize', toggleMenuItems);
-document.addEventListener('scroll', changeMenuOpacity);
+document.addEventListener('scroll', function() {
+  changeMenuOpacity(); 
+  applyFixed();
+});
 
 const link = document.getElementsByClassName('menu__link');
 for (let i=0; i<link.length; i++) {
@@ -20,6 +23,18 @@ function changeMenuOpacity() {
       menu.classList.remove('menu--white');
       menuLogo.classList.add('logo--white');
     }
+}
+
+function applyFixed() {
+  const menu = document.getElementById('menu');
+  const sections = document.getElementsByClassName('section-wrapper');
+  if (pageYOffset > window.innerHeight) { 
+    menu.classList.add('menu--fixed'); 
+    sections[0].classList.add('section-wrapper--menu-fixed');
+  } else {
+    menu.classList.remove('menu--fixed');
+    sections[0].classList.remove('section-wrapper--menu-fixed');
+  }
 }
                         
 function initMenu() {

@@ -362,6 +362,8 @@ a {
   align-items: center;
   width: 90%;
   margin: 70px auto 70px auto; }
+  .section-wrapper--menu-fixed {
+    margin-top: 130px; }
   .section-wrapper__anchor {
     height: 100px;
     margin-top: -100px;
@@ -471,6 +473,10 @@ margin: 70px auto 120px auto;
     .menu--white .menu__button {
       color: #5a5957;
       border-color: #5a5957; }
+  .menu--fixed {
+    position: fixed;
+    top: 0;
+    left: 0; }
   .menu__bg {
     position: relative;
     width: 100%; }
@@ -865,6 +871,8 @@ margin-top: 80px;
   .menu {
     position: static;
     padding: 15px 50px; }
+    .menu--fixed {
+      position: fixed; }
     .menu__button {
       display: none; }
     .menu__logo {
