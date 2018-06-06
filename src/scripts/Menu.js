@@ -17,10 +17,10 @@ function changeMenuOpacity() {
   const menu = document.getElementById('menu');
   const menuLogo = document.getElementById('menu-logo');
     if (pageYOffset > 100) { 
-      menu.classList.add('menu--white');
+      menu.classList.add('menu--half-opacity');
       menuLogo.classList.remove('logo--white');
     } else {
-      menu.classList.remove('menu--white');
+      menu.classList.remove('menu--half-opacity');
       menuLogo.classList.add('logo--white');
     }
 }
@@ -29,10 +29,10 @@ function applyFixed() {
   const menu = document.getElementById('menu');
   const sections = document.getElementsByClassName('section-wrapper');
   if (pageYOffset > window.innerHeight) { 
-    menu.classList.add('menu--fixed'); 
+    menu.classList.add('menu--fixed', 'menu--white'); 
     sections[0].classList.add('section-wrapper--menu-fixed');
   } else {
-    menu.classList.remove('menu--fixed');
+    menu.classList.remove('menu--fixed', 'menu--white');
     sections[0].classList.remove('section-wrapper--menu-fixed');
   }
 }

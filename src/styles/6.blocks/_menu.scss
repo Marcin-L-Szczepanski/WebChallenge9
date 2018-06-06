@@ -8,8 +8,15 @@
   background-color: rgba(255,255,255,0.2);
   z-index: 2;
   transition: background-color 300ms linear;
-  &--white {
+  &--half-opacity {
     background-color: rgba(255,255,255,0.8);
+    & #{$block}__button {
+      color: $chicago;
+      border-color: $chicago;
+    }
+  }
+  &--white {
+    background-color: $white;
     & #{$block}__button {
       color: $chicago;
       border-color: $chicago;
