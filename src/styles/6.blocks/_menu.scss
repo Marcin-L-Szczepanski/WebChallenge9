@@ -155,8 +155,11 @@
     padding: 15px 50px;
     &--fixed {
       position: fixed;
+      width: 1230px;
       top: 0;
       left: 0;
+      right: 0;
+      margin: 0 auto;      
     }
     &__button {
       display: none;
