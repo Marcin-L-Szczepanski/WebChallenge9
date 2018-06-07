@@ -464,8 +464,9 @@ margin: 70px auto 120px auto;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 2;
-  transition: background-color 300ms linear;
-  transition: box-shadow 900ms linear; }
+  transition: background-color 300ms linear, box-shadow 900ms linear; }
+  .menu--fixed {
+    box-shadow: 0px -5px 28px -1px rgba(0, 0, 0, 0.75); }
   .menu--half-opacity {
     background-color: rgba(255, 255, 255, 0.8); }
     .menu--half-opacity .menu__button {
@@ -877,8 +878,7 @@ margin-top: 80px;
     .menu--fixed {
       position: fixed;
       top: 0;
-      left: 0;
-      box-shadow: 0px -5px 28px -1px rgba(0, 0, 0, 0.75); }
+      left: 0; }
     .menu__button {
       display: none; }
     .menu__logo {
