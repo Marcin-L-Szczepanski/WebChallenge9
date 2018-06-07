@@ -462,10 +462,10 @@ margin: 70px auto 120px auto;
   top: 0;
   height: 60px;
   width: 100%;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 2;
-  transition: background-color 300ms linear; }
+  transition: background-color 300ms linear;
+  transition: box-shadow 900ms linear; }
   .menu--half-opacity {
     background-color: rgba(255, 255, 255, 0.8); }
     .menu--half-opacity .menu__button {
@@ -476,6 +476,8 @@ margin: 70px auto 120px auto;
     .menu--white .menu__button {
       color: #5a5957;
       border-color: #5a5957; }
+  .menu__wrapper {
+    display: flex; }
   .menu__bg {
     position: relative;
     width: 100%; }
@@ -874,11 +876,9 @@ margin-top: 80px;
     padding: 15px 50px; }
     .menu--fixed {
       position: fixed;
-      width: 1230px;
       top: 0;
       left: 0;
-      right: 0;
-      margin: 0 auto; }
+      box-shadow: 0px -5px 28px -1px rgba(0, 0, 0, 0.75); }
     .menu__button {
       display: none; }
     .menu__logo {
