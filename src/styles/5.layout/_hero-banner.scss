@@ -38,6 +38,12 @@
     width: 100%;
     max-width: 450px;
   }
+  
+  &__arrow {
+    margin-top: 20%;
+    stroke: $white;
+    stroke-width: 5;
+  }
 }
 
 // Media queries 
@@ -49,6 +55,9 @@
         font-size: 40px;
       }
       &__subtitle {      
+        display: none;
+      }
+      &__arrow {
         display: none;
       }
     }

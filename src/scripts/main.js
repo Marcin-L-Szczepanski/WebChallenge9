@@ -1,4 +1,5 @@
 require('./Menu.js');
+require('./Hero-banner.js');
 require('./vendor/siema.js');
 
 
