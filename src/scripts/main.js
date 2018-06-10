@@ -2,7 +2,10 @@ require('./Menu.js');
 require('./Hero-banner.js');
 require('./vendor/siema.js');
 
+import smoothscroll from 'smoothscroll-polyfill';
 
+// kick off the polyfill!
+smoothscroll.polyfill();
 /*
 import initMenu from './Menu';
 
