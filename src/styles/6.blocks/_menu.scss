@@ -28,8 +28,10 @@
   }
   
   &__wrapper {
-
+    width: 100%;
+    max-width: 1230px;
     display: flex;
+    margin: 0 auto;
   }
   
   &__bg {

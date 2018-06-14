@@ -508,7 +508,10 @@ margin: 70px auto 120px auto;
       color: #5a5957;
       border-color: #5a5957; }
   .menu__wrapper {
-    display: flex; }
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    margin: 0 auto; }
   .menu__bg {
     position: relative;
     width: 100%; }
