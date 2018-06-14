@@ -744,6 +744,24 @@ margin-top: 80px;
       border-right: 2px solid #ffffff;
       right: -30px; }
 
+.carousel__dots {
+  margin-top: 40px; }
+
+.carousel__dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border: 2px solid white;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  transition: all 500ms linear; }
+  .carousel__dot--active {
+    width: 12px;
+    height: 12px;
+    background-color: #d07c7c; }
+
 .opinions__title {
   position: relative;
   margin-bottom: 70px;
