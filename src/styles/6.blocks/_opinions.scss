@@ -3,6 +3,7 @@
     position: relative;
     margin-bottom: 70px;
     @include font($playfair, 25px);
+    text-align: center;
     &::after {
       content: '';
       position: absolute;

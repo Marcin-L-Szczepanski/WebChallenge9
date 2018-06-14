@@ -768,7 +768,8 @@ margin-top: 80px;
   font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: 400;
-  color: #848282; }
+  color: #848282;
+  text-align: center; }
   .opinions__title::after {
     content: '';
     position: absolute;
