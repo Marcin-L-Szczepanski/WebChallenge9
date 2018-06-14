@@ -756,6 +756,7 @@ margin-top: 80px;
   box-sizing: content-box;
   border-radius: 50%;
   background-color: #d3d3d3;
+  cursor: pointer;
   transition: all 500ms linear; }
   .carousel__dot--active {
     width: 12px;

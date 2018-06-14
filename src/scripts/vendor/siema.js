@@ -34,11 +34,13 @@ function createDots () {
   carouselDots.classList.add('carousel__dots');
   opinionsSection.appendChild(carouselDots);
   
-  carouselElements.forEach(element => {
+  carouselElements.forEach((element, i) => {
     const carouselDot = document.createElement('div');
     carouselDot.classList.add('carousel__dot');
+    carouselDot.addEventListener('click', function(){
+      opinionsCarousel.goTo(i);
+    });
     carouselDots.appendChild(carouselDot);
-    //console.log(carouselDot);
   });
  markActiveDot();
 }
