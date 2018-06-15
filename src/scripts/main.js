@@ -1,5 +1,6 @@
 require('./Menu.js');
 require('./Hero-banner.js');
+require('./Footer.js');
 require('./vendor/siema.js');
 
 import smoothscroll from 'smoothscroll-polyfill';
