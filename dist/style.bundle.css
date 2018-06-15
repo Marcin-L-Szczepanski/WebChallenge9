@@ -889,6 +889,11 @@ margin-top: 80px;
 
 .footer {
   margin: 25px auto; }
+  .footer__arrow {
+    margin-bottom: 20px;
+    stroke: #848282;
+    stroke-width: 8;
+    cursor: pointer; }
   .footer__logo {
     margin-bottom: 25px; }
   .footer__copyright {
