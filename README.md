@@ -2,7 +2,7 @@
 
 Below PSD design converted to responsive website.
 
-<!---Converted page is available at: https://marcin-l-szczepanski.github.io/WebChallenge9/--->
+Converted page is available at: https://marcin-l-szczepanski.github.io/WebChallenge9/
 
 More information about the project:
 * [Progressive Enhancement](#progressive-enhancement)
